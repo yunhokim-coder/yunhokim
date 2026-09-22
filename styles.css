@@ -56,7 +56,8 @@ footer{max-width:1180px;margin:auto;padding:28px;border-top:1px solid var(--line
 .diversity-article{max-width:760px}.diversity-article .essay-head{margin-bottom:50px}
 @media(max-width:650px){.essay-article{font-size:1.05rem}.essay-section-title{margin-top:38px}}
 
-.hero .subtitle{margin-bottom:16px}
-.hero-mission{margin:0 0 33px;padding:3px 0 4px 18px;border-left:2px solid var(--accent2)}
-.hero-motto{font:italic clamp(1.45rem,2.5vw,2.05rem)/1.28 var(--serif);color:#203746;margin:0 0 8px}
-.hero-motto-caption{font-size:.92rem;color:#526875;margin:0;letter-spacing:.015em}
+.portrait-column{max-width:300px}.portrait-column .portrait{display:block}
+.hero-mission{margin:21px 0 0;padding:2px 0 2px 14px;border-left:2px solid var(--accent2)}
+.hero-motto{font:italic 1.48rem/1.28 var(--serif);color:#203746;margin:0 0 9px}
+.hero-motto-caption{font-size:.86rem;line-height:1.5;color:#526875;margin:0}
+@media(max-width:900px){.portrait-column{max-width:330px}}
