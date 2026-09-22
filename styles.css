@@ -55,3 +55,8 @@ footer{max-width:1180px;margin:auto;padding:28px;border-top:1px solid var(--line
 .draft-status{display:inline-block!important;font:700 .78rem var(--sans);letter-spacing:.12em;text-transform:uppercase;color:#7c4a31;background:#f3e5d8;padding:6px 11px;margin:5px 0 0!important;border-radius:3px}
 .diversity-article{max-width:760px}.diversity-article .essay-head{margin-bottom:50px}
 @media(max-width:650px){.essay-article{font-size:1.05rem}.essay-section-title{margin-top:38px}}
+
+.hero .subtitle{margin-bottom:16px}
+.hero-mission{margin:0 0 33px;padding:3px 0 4px 18px;border-left:2px solid var(--accent2)}
+.hero-motto{font:italic clamp(1.45rem,2.5vw,2.05rem)/1.28 var(--serif);color:#203746;margin:0 0 8px}
+.hero-motto-caption{font-size:.92rem;color:#526875;margin:0;letter-spacing:.015em}
