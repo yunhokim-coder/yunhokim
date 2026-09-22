@@ -67,3 +67,17 @@ footer{max-width:1180px;margin:auto;padding:28px;border-top:1px solid var(--line
 .diversity-figure--side{float:right;width:min(43%,305px);margin:4px 0 22px 30px}
 .diversity-figure--wide{clear:both;margin:34px 0 42px}.diversity-figure--current{margin-top:45px}
 @media(max-width:650px){.diversity-figure--side{float:none;width:100%;max-width:410px;margin:25px auto 32px}.diversity-figure--wide{margin:28px 0 36px}}
+
+/* Photo essay for the cultural-arts visits. */
+.youth-feature{padding:44px 0 56px}.youth-feature-heading h2{font-size:clamp(2rem,4vw,3.35rem);margin:5px 0 18px;letter-spacing:-.025em}
+.youth-feature-intro{font:1.23rem/1.6 var(--serif);max-width:810px;margin:0 0 38px;color:#344651}
+.youth-feature-grid{display:grid;grid-template-columns:minmax(0,1.38fr) minmax(260px,.8fr);gap:36px;align-items:center}
+.youth-feature-photo{margin:0}.youth-feature-photo img{display:block;width:100%;height:auto;border-radius:3px}
+.youth-feature-photo figcaption{color:#687784;font-size:.78rem;line-height:1.55;margin-top:10px}
+.youth-feature-date{font-size:.76rem;letter-spacing:.14em;text-transform:uppercase;font-weight:800;color:var(--accent)}
+.youth-feature-copy h3,.youth-feature-november h3{font-size:clamp(1.5rem,2.5vw,2.15rem);margin:12px 0 18px}
+.youth-feature-copy p,.youth-feature-november p{font:1.08rem/1.73 var(--serif);color:#34434c;margin:0 0 16px}
+.youth-feature-copy .youth-feature-links{font:.86rem/1.75 var(--sans);color:#64748b;margin:23px 0 0}
+.youth-feature-november{display:grid;grid-template-columns:minmax(150px,.35fr) minmax(0,1fr);gap:36px;max-width:910px;margin:65px 0 28px;padding-top:26px;border-top:1px solid var(--line)}
+.youth-feature-november h3{margin-top:0}.youth-feature-photo--final{max-width:1000px;margin:0 auto}
+@media(max-width:750px){.youth-feature-grid,.youth-feature-november{grid-template-columns:1fr;gap:20px}.youth-feature-grid{gap:28px}.youth-feature-november{margin-top:43px}.youth-feature-intro{font-size:1.1rem}}
