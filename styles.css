@@ -85,9 +85,9 @@ footer{max-width:1180px;margin:auto;padding:28px;border-top:1px solid var(--line
 /* Music release and listening links. */
 .music-feature{padding:42px 0 58px}.music-feature h2{font-size:clamp(2rem,4vw,3.35rem);letter-spacing:-.025em;margin:5px 0 17px}
 .music-feature-intro{font:1.23rem/1.6 var(--serif);color:#344651;max-width:810px;margin:0 0 35px}
-.music-feature-grid{display:grid;grid-template-columns:minmax(230px,.66fr) minmax(0,1fr);gap:48px;align-items:center}
-.music-feature-logo{margin:0;max-width:355px}.music-feature-logo img{display:block;width:100%;height:auto;border-radius:3px;border:1px solid var(--line)}
-.music-feature-logo figcaption{font-size:.78rem;color:#687784;letter-spacing:.04em;margin-top:10px}
+.music-feature-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:38px;align-items:center}
+.music-feature-cover{margin:0;max-width:540px}.music-feature-cover img{display:block;width:100%;height:auto;border-radius:3px}
+.music-feature-cover figcaption,.music-feature-group figcaption{font-size:.78rem;color:#687784;letter-spacing:.04em;margin-top:10px}
 .music-feature-story h3{font-size:clamp(1.65rem,3vw,2.45rem);letter-spacing:-.025em;margin:11px 0 3px;overflow-wrap:anywhere}
 .music-feature-translation{font-size:.88rem;color:#677884;margin:0 0 21px!important}
 .music-feature-story>p:not(.music-feature-translation):not(.music-feature-platforms){font:1.08rem/1.75 var(--serif);max-width:570px;margin:0 0 25px;color:#34434c}
@@ -96,4 +96,5 @@ footer{max-width:1180px;margin:auto;padding:28px;border-top:1px solid var(--line
 .music-feature-platforms{font-size:.84rem;color:#697985;line-height:1.8;margin:15px 0 0}
 .music-feature-social{display:flex;align-items:center;gap:17px;flex-wrap:wrap;margin-top:36px;padding-top:18px;border-top:1px solid var(--line);font-size:.86rem}
 .music-feature-social span{font-weight:700;color:#485a65;margin-right:6px}
-@media(max-width:750px){.music-feature-grid{grid-template-columns:1fr;gap:25px}.music-feature-logo{max-width:300px}.music-feature-intro{font-size:1.1rem}}
+.music-feature-group{max-width:1000px;margin:38px auto 0}.music-feature-group img{display:block;width:100%;height:auto;border-radius:3px}
+@media(max-width:750px){.music-feature-grid{grid-template-columns:1fr;gap:25px}.music-feature-cover{max-width:540px}.music-feature-intro{font-size:1.1rem}.music-feature-group{margin-top:30px}}
