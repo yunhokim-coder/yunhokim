@@ -98,3 +98,10 @@ footer{max-width:1180px;margin:auto;padding:28px;border-top:1px solid var(--line
 .music-feature-social span{font-weight:700;color:#485a65;margin-right:6px}
 .music-feature-group{max-width:1000px;margin:38px auto 0}.music-feature-group img{display:block;width:100%;height:auto;border-radius:3px}
 @media(max-width:750px){.music-feature-grid{grid-template-columns:1fr;gap:25px}.music-feature-cover{max-width:540px}.music-feature-intro{font-size:1.1rem}.music-feature-group{margin-top:30px}}
+
+/* Readable abstracts for publications and scholarly materials. */
+.publication-entry{max-width:900px;padding:30px 0 36px}.publication-entry h2{font-size:1.65rem;margin-bottom:14px}
+.publication-entry>p{margin:9px 0 0}.publication-summary{margin:25px 0 20px;padding:20px 25px;background:var(--card);border-left:3px solid var(--accent2)}
+.publication-summary h3{font:800 .75rem/1.5 var(--sans);color:var(--accent);text-transform:uppercase;letter-spacing:.13em;margin:0 0 11px}
+.publication-summary p{font:1.06rem/1.78 var(--serif);color:#34434c;margin:0}.publication-entry .publication-links{font-size:.9rem;font-weight:650;margin:18px 0}
+@media(max-width:650px){.publication-summary{padding:18px}.publication-summary p{font-size:1rem}}
