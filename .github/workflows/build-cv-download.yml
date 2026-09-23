@@ -1,0 +1,104 @@
+name: Build latest CV download
+
+on:
+  push:
+    paths:
+      - '.github/workflows/build-cv-download.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install document tools
+        run: pip install python-docx lxml
+
+      - name: Build latest CV download
+        run: |
+          python <<'PY'
+          from docx import Document
+          from lxml import etree
+          from pathlib import Path
+          import zipfile, tempfile, shutil
+
+          source = Path("Yunho_Kim_Academic_CV_V4.docx")
+          staged = Path("_cv_staged.docx")
+          output = Path("Yunho_Kim_Academic_CV.docx")
+          website = "https://yunhokim-coder.github.io/yuns-personal-website/"
+
+          doc = Document(source)
+
+          context_text = "Collaborative program organized by the Ministry of Justice and Miracle OK Language Institute, a nonprofit association"
+          bullet_start = "• Participated in two outreach performances for justice-involved adolescents"
+
+          texts = [p.text.strip() for p in doc.paragraphs]
+          if context_text not in texts:
+              for p in doc.paragraphs:
+                  if p.text.strip().startswith(bullet_start):
+                      new_p = doc.add_paragraph()
+                      p._p.addnext(new_p._p)
+                      r = new_p.add_run(context_text)
+                      r.italic = True
+                      break
+
+          doc.save(staged)
+
+          with tempfile.TemporaryDirectory() as td:
+              td = Path(td)
+              with zipfile.ZipFile(staged, "r") as zin:
+                  zin.extractall(td)
+
+              doc_xml = td / "word" / "document.xml"
+              rel_xml = td / "word" / "_rels" / "document.xml.rels"
+
+              ns = {
+                  "w": "http://schemas.openxmlformats.org/wordprocessingml/2006/main",
+                  "r": "http://schemas.openxmlformats.org/officeDocument/2006/relationships",
+              }
+
+              tree = etree.parse(str(doc_xml))
+              rid = None
+              for h in tree.xpath("//w:hyperlink", namespaces=ns):
+                  label = "".join(h.xpath(".//w:t/text()", namespaces=ns)).strip()
+                  if label == "Website":
+                      rid = h.get("{%s}id" % ns["r"])
+                      break
+
+              if rid and rel_xml.exists():
+                  rel_tree = etree.parse(str(rel_xml))
+                  rel_ns = "http://schemas.openxmlformats.org/package/2006/relationships"
+                  for rel in rel_tree.getroot():
+                      if rel.get("Id") == rid:
+                          rel.set("Target", website)
+                          rel.set("TargetMode", "External")
+                          break
+                  rel_tree.write(str(rel_xml), xml_declaration=True, encoding="UTF-8", standalone=True)
+
+              with zipfile.ZipFile(output, "w", zipfile.ZIP_DEFLATED) as zout:
+                  for path in td.rglob("*"):
+                      if path.is_file():
+                          zout.write(path, path.relative_to(td))
+
+          staged.unlink(missing_ok=True)
+          PY
+
+      - name: Commit generated CV
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add Yunho_Kim_Academic_CV.docx
+          if git diff --cached --quiet; then
+            echo "CV already up to date."
+          else
+            git commit -m "Update downloadable academic CV"
+            git push
+          fi
