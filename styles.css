@@ -117,3 +117,13 @@ footer{max-width:1180px;margin:auto;padding:28px;border-top:1px solid var(--line
 .publication-summary h3{font:800 .75rem/1.5 var(--sans);color:var(--accent);text-transform:uppercase;letter-spacing:.13em;margin:0 0 11px}
 .publication-summary p{font:1.06rem/1.78 var(--serif);color:#34434c;margin:0}.publication-entry .publication-links{font-size:.9rem;font-weight:650;margin:18px 0}
 @media(max-width:650px){.publication-summary{padding:18px}.publication-summary p{font-size:1rem}}
+
+/* Conference presentation photo essay. */
+.conference-feature{padding:50px 0 65px}.conference-feature>h2{font-size:clamp(2.1rem,4.5vw,3.7rem);letter-spacing:-.035em;max-width:880px;margin:5px 0 19px}
+.conference-deck{font:1.24rem/1.62 var(--serif);color:#344651;max-width:800px;margin:0 0 35px}
+.conference-photo{margin:0 0 47px}.conference-photo img{display:block;width:100%;height:auto;border-radius:3px}.conference-photo figcaption{font:.79rem/1.5 var(--sans);color:#657784;margin:11px 0 0}
+.conference-columns{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:65px;max-width:1010px;margin:0 auto 31px}
+.conference-chapter{font:.75rem var(--sans);font-weight:800;text-transform:uppercase;letter-spacing:.14em;color:var(--accent)}
+.conference-columns h3{font-size:clamp(1.5rem,2.8vw,2.15rem);margin:11px 0 17px}.conference-columns p,.conference-ending{font:1.08rem/1.77 var(--serif);color:#34434c;margin:0}
+.conference-ending{max-width:890px;margin:0 auto;padding:23px 0 0;border-top:1px solid var(--line)}.conference-ending a{font:.9rem var(--sans);font-weight:700;white-space:nowrap}
+@media(max-width:750px){.conference-feature{padding:35px 0 48px}.conference-deck{font-size:1.12rem}.conference-photo{margin-bottom:33px}.conference-columns{grid-template-columns:1fr;gap:28px}.conference-ending a{white-space:normal}}
