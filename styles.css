@@ -127,3 +127,18 @@ footer{max-width:1180px;margin:auto;padding:28px;border-top:1px solid var(--line
 .conference-columns h3{font-size:clamp(1.5rem,2.8vw,2.15rem);margin:11px 0 17px}.conference-columns p,.conference-ending{font:1.08rem/1.77 var(--serif);color:#34434c;margin:0}
 .conference-ending{max-width:890px;margin:0 auto;padding:23px 0 0;border-top:1px solid var(--line)}.conference-ending a{font:.9rem var(--sans);font-weight:700;white-space:nowrap}
 @media(max-width:750px){.conference-feature{padding:35px 0 48px}.conference-deck{font-size:1.12rem}.conference-photo{margin-bottom:33px}.conference-columns{grid-template-columns:1fr;gap:28px}.conference-ending a{white-space:normal}}
+
+/* Hwanggok classroom feature: story, activity, and original teaching materials. */
+.hwanggok-feature{padding:51px 0 70px}.hwanggok-feature>h2{font-size:clamp(2.45rem,5vw,4.6rem);letter-spacing:-.04em;margin:5px 0 19px}
+.hwanggok-deck{font:1.25rem/1.65 var(--serif);color:#344651;max-width:875px;margin:0 0 38px}
+.hwanggok-photo{margin:0}.hwanggok-photo img{display:block;width:100%;height:auto;border-radius:3px}.hwanggok-photo figcaption{font:.78rem/1.5 var(--sans);letter-spacing:.025em;color:#657784;margin:10px 0 0}
+.hwanggok-photo--hero{margin-bottom:61px}.hwanggok-photo--hero img{aspect-ratio:2.25;object-fit:cover;object-position:center}
+.hwanggok-opening,.hwanggok-closing{display:grid;grid-template-columns:minmax(0,.86fr) minmax(0,1fr);gap:49px;align-items:center;margin:0 0 64px}
+.hwanggok-copy h3,.hwanggok-materials-head h3{font-size:clamp(1.7rem,3vw,2.45rem);margin:9px 0 18px}.hwanggok-copy p,.hwanggok-materials-head p{font:1.1rem/1.75 var(--serif);color:#34434c;margin:0}
+.hwanggok-label{font:.76rem/1.5 var(--sans);font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+.hwanggok-steps{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:36px 65px;max-width:1030px;margin:0 auto 71px;padding:37px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.hwanggok-steps h3{font-size:1.58rem;margin:9px 0 14px}.hwanggok-steps p{font:1.04rem/1.72 var(--serif);color:#34434c;margin:0}
+.hwanggok-materials{margin:0 0 65px}.hwanggok-materials-head{max-width:720px;margin:0 0 28px}.hwanggok-material-grid{display:grid;grid-template-columns:.74fr 1fr 1fr;gap:21px;align-items:start}
+.hwanggok-material-grid .hwanggok-photo{min-width:0}.hwanggok-material-grid a{display:block;background:#eeeae1}.hwanggok-material-grid img{width:100%;height:300px;object-fit:contain}.hwanggok-material-grid a:hover img{opacity:.9}
+.hwanggok-closing{grid-template-columns:minmax(0,.78fr) minmax(0,1fr);margin:0}.hwanggok-photo--activity{max-width:640px}
+@media(max-width:750px){.hwanggok-feature{padding:38px 0 52px}.hwanggok-deck{font-size:1.12rem}.hwanggok-photo--hero{margin-bottom:41px}.hwanggok-opening,.hwanggok-closing,.hwanggok-steps{grid-template-columns:1fr;gap:24px}.hwanggok-opening,.hwanggok-closing{margin-bottom:44px}.hwanggok-steps{margin-bottom:45px;padding:27px 0}.hwanggok-material-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.hwanggok-material-grid .hwanggok-photo--badge{grid-column:span 2;max-width:260px}.hwanggok-material-grid img{height:200px}.hwanggok-material-grid .hwanggok-photo--badge img{height:260px}.hwanggok-materials{margin-bottom:40px}}
