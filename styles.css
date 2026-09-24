@@ -190,3 +190,18 @@ footer{max-width:1180px;margin:auto;padding:28px;border-top:1px solid var(--line
 .selected-secondary-copy p{margin:0 0 15px;color:#52606a;max-width:760px}
 .selected-secondary-copy a{margin-top:auto}
 @media(max-width:700px){.selected-secondary{grid-template-columns:1fr}.selected-secondary-media{height:190px;min-height:190px}.selected-secondary-copy{padding:23px 24px}}
+
+
+/* Happiness Habit Scale research feature. */
+.happiness-feature{padding:52px 0 66px}.happiness-feature>h2{font-size:clamp(2.45rem,5vw,4.55rem);letter-spacing:-.045em;max-width:900px;margin:6px 0 18px}
+.happiness-deck{font:1.27rem/1.64 var(--serif);color:#344651;max-width:850px;margin:0 0 37px}
+.happiness-hero{margin:0 0 34px}.happiness-hero img{display:block;width:100%;height:auto;max-width:1080px;border-radius:3px;box-shadow:0 12px 28px rgba(33,44,55,.10);background:#eee9df}.happiness-hero figcaption{font:.78rem/1.55 var(--sans);color:#657784;margin-top:10px;max-width:900px}
+.happiness-stat-strip{display:grid;grid-template-columns:repeat(4,1fr);max-width:980px;margin:0 auto 58px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.happiness-stat-strip>div{padding:20px 18px;text-align:center;border-right:1px solid var(--line)}.happiness-stat-strip>div:last-child{border-right:0}.happiness-stat-strip strong{display:block;font:500 2.25rem/1 var(--serif);color:var(--accent);margin-bottom:7px}.happiness-stat-strip span{font:.76rem/1.35 var(--sans);letter-spacing:.055em;text-transform:uppercase;color:#687780}
+.happiness-research-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(42px,6vw,78px);max-width:1040px;margin:0 auto 58px}.happiness-research-grid h3,.happiness-applied h3{font-size:clamp(1.62rem,2.8vw,2.3rem);margin:10px 0 17px}.happiness-research-grid p,.happiness-applied p{font:1.07rem/1.78 var(--serif);color:#34434c;margin:0 0 17px}
+.happiness-chapter{font:800 .74rem/1.5 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+.happiness-factors{display:grid;gap:1px;background:var(--line);border:1px solid var(--line);margin-top:25px}.happiness-factors>div{display:grid;grid-template-columns:38px 1fr;gap:10px;align-items:center;background:var(--card);padding:14px 16px}.happiness-factors b{font:500 1.25rem var(--serif);color:var(--accent2)}.happiness-factors strong{font:.9rem/1.4 var(--sans);color:#364852}
+.happiness-applied{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(270px,.65fr);gap:clamp(35px,5vw,62px);max-width:1040px;margin:0 auto 35px;padding:34px 37px;background:#eeeae1;border-top:1px solid #d8d1c5;border-bottom:1px solid #d8d1c5;align-items:start}
+.happiness-method-note{padding:20px 21px;background:var(--card);border-left:3px solid var(--accent2);font:.9rem/1.65 var(--sans);color:#52616a}.happiness-method-note strong{display:block;font:800 .72rem/1.4 var(--sans);letter-spacing:.11em;text-transform:uppercase;color:var(--accent);margin-bottom:9px}.happiness-method-note span{display:block}
+.happiness-links{max-width:1040px;margin:0 auto!important;font:.9rem/1.7 var(--sans)!important;font-weight:700!important}.publication-entry--happiness{max-width:950px}
+@media(max-width:760px){.happiness-feature{padding:38px 0 50px}.happiness-deck{font-size:1.12rem}.happiness-stat-strip{grid-template-columns:repeat(2,1fr);margin-bottom:42px}.happiness-stat-strip>div:nth-child(2){border-right:0}.happiness-stat-strip>div:nth-child(-n+2){border-bottom:1px solid var(--line)}.happiness-research-grid,.happiness-applied{grid-template-columns:1fr;gap:28px}.happiness-research-grid{margin-bottom:42px}.happiness-applied{padding:26px 22px}.happiness-hero{margin-bottom:27px}}
