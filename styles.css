@@ -282,3 +282,5 @@ footer{max-width:1180px;margin:auto;padding:28px;border-top:1px solid var(--line
 .happiness-sheets figure{margin:0}.happiness-sheets a{display:block}.happiness-sheets img{display:block;width:100%;height:auto;border-radius:3px;box-shadow:0 10px 24px rgba(33,44,55,.12)}
 .happiness-sheets figcaption{font:.78rem/1.5 var(--sans);color:#657784;margin-top:9px}
 @media(max-width:600px){.happiness-sheets{flex-direction:column;max-width:420px}.happiness-sheets>figure{flex:none;width:100%}}
+/* Memorial Night card: show the whole title artwork; the poster's own navy fills the sides. */
+.overview-media--night{display:flex;justify-content:center;background:#040f25;border-color:#040f25}.overview-media--night img{width:auto;max-width:100%;object-fit:cover;-webkit-mask-image:linear-gradient(to right,transparent,#000 9%,#000 91%,transparent);mask-image:linear-gradient(to right,transparent,#000 9%,#000 91%,transparent)}@media(max-width:700px){.overview-media--night img{-webkit-mask-image:none;mask-image:none}}
