@@ -205,3 +205,29 @@ footer{max-width:1180px;margin:auto;padding:28px;border-top:1px solid var(--line
 .happiness-method-note{padding:20px 21px;background:var(--card);border-left:3px solid var(--accent2);font:.9rem/1.65 var(--sans);color:#52616a}.happiness-method-note strong{display:block;font:800 .72rem/1.4 var(--sans);letter-spacing:.11em;text-transform:uppercase;color:var(--accent);margin-bottom:9px}.happiness-method-note span{display:block}
 .happiness-links{max-width:1040px;margin:0 auto!important;font:.9rem/1.7 var(--sans)!important;font-weight:700!important}.publication-entry--happiness{max-width:950px}
 @media(max-width:760px){.happiness-feature{padding:38px 0 50px}.happiness-deck{font-size:1.12rem}.happiness-stat-strip{grid-template-columns:repeat(2,1fr);margin-bottom:42px}.happiness-stat-strip>div:nth-child(2){border-right:0}.happiness-stat-strip>div:nth-child(-n+2){border-bottom:1px solid var(--line)}.happiness-research-grid,.happiness-applied{grid-template-columns:1fr;gap:28px}.happiness-research-grid{margin-bottom:42px}.happiness-applied{padding:26px 22px}.happiness-hero{margin-bottom:27px}}
+
+/* Overview-first collection pages: a scannable list of entries, each opening into its full column. */
+.overview{display:grid;gap:0;border-top:1px solid var(--line)}
+.overview-item{padding:30px 0 34px;border-bottom:1px solid var(--line)}
+.overview-kicker{font-size:.74rem;letter-spacing:.13em;text-transform:uppercase;color:var(--accent);font-weight:800;margin-bottom:6px}
+.overview-item h2{font-size:clamp(1.4rem,2.4vw,1.8rem);margin:0 0 18px;max-width:880px}
+.overview-item h2 a{color:inherit}.overview-item h2 a:hover{color:var(--accent);text-decoration:none}
+.overview-body{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(20px,3vw,36px);align-items:stretch}
+.overview-media{display:block;position:relative;height:230px;overflow:hidden;border-radius:6px;background:#e7e5df;border:1px solid var(--line)}
+.overview-media img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .35s ease}
+.overview-item:hover .overview-media img{transform:scale(1.035)}
+.overview-media--text{display:flex;flex-direction:column;justify-content:flex-end;gap:4px;padding:22px 24px;background:linear-gradient(140deg,#e3ecef 0%,#f1eee5 100%);color:var(--ink)}
+.overview-media--text span{font:800 .72rem/1.3 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+.overview-media--text strong{font:400 clamp(1.35rem,2.4vw,1.75rem)/1.2 var(--serif);color:#17212a}
+.overview-media--text:hover{text-decoration:none}
+.overview-summary{display:flex;flex-direction:column;background:var(--card);border:1px solid var(--line);border-radius:6px;padding:22px 24px}
+.overview-summary p{margin:0 0 16px;color:#46545e}
+.overview-more{margin-top:auto;align-self:flex-end;font-weight:700}
+.collection-js [data-detail]{display:none}
+.collection-js [data-detail].is-open{display:block;border-bottom:0}
+.collection-js.is-detail .overview,.collection-js.is-detail .page-head{display:none}
+.detail-back{display:inline-block;font-size:.9rem;font-weight:700}
+.detail-back--top{margin-bottom:26px}
+.detail-back--bottom{margin-top:34px;padding-top:20px;border-top:1px solid var(--line);display:block}
+@media(max-width:700px){.overview-body{grid-template-columns:1fr;gap:14px}.overview-media{height:200px}.overview-media--text{height:130px}.overview-summary{padding:18px 19px}}
+[data-detail] [id],[data-detail]{scroll-margin-top:84px}
