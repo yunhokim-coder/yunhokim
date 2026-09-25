@@ -272,3 +272,13 @@ footer{max-width:1180px;margin:auto;padding:28px;border-top:1px solid var(--line
 .grit-limits{padding:20px 21px;background:var(--card);border-left:3px solid var(--accent2);font:.9rem/1.6 var(--sans);color:#52616a}.grit-limits strong{display:block;font:800 .72rem/1.4 var(--sans);letter-spacing:.11em;text-transform:uppercase;color:var(--accent);margin-bottom:9px}.grit-limits ul{margin:0;padding-left:18px}.grit-limits li{margin-bottom:5px}
 .grit-links{max-width:1040px;margin:0 auto!important;font:.9rem/1.7 var(--sans)!important;font-weight:700!important}
 @media(max-width:760px){.grit-feature{padding:38px 0 50px}.grit-deck{font-size:1.12rem}.grit-stat-strip{grid-template-columns:repeat(2,1fr);margin-bottom:42px}.grit-stat-strip>div:nth-child(2){border-right:0}.grit-stat-strip>div:nth-child(-n+2){border-bottom:1px solid var(--line)}.grit-two-col,.grit-reflection,.grit-chart-grid,.grit-findings,.grit-sessions{grid-template-columns:1fr}.grit-sessions li:last-child:nth-child(odd){grid-column:auto}.grit-two-col{gap:34px;margin-bottom:44px}.grit-sessions-wrap{padding:26px 18px}.grit-reflection{gap:26px}}
+/* Overview cards that show whole documents instead of a cropped photo. */
+.overview-media--poster,.overview-media--sheets{display:flex;align-items:center;justify-content:center;gap:10px;padding:14px;background:#eee9df}
+.overview-media--poster img,.overview-media--sheets img{width:auto;height:auto;max-height:100%;max-width:100%;box-shadow:0 4px 12px rgba(33,44,55,.14);border-radius:2px}
+.overview-media--sheets img{min-width:0;max-width:calc((100% - 20px)/3)}
+.overview-item:hover .overview-media--poster img,.overview-item:hover .overview-media--sheets img{transform:none}
+/* Happiness column: the three portfolio materials as separate, full-resolution figures. */
+.happiness-sheets{display:flex;gap:18px;max-width:1040px;align-items:flex-start}.happiness-sheets>figure{flex:var(--ar,1) 1 0;min-width:0}
+.happiness-sheets figure{margin:0}.happiness-sheets a{display:block}.happiness-sheets img{display:block;width:100%;height:auto;border-radius:3px;box-shadow:0 10px 24px rgba(33,44,55,.12)}
+.happiness-sheets figcaption{font:.78rem/1.5 var(--sans);color:#657784;margin-top:9px}
+@media(max-width:600px){.happiness-sheets{flex-direction:column;max-width:420px}.happiness-sheets>figure{flex:none;width:100%}}
