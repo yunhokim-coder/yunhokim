@@ -385,28 +385,6 @@ footer{max-width:1180px;margin:auto;padding:28px;border-top:1px solid var(--line
 .comic-nav button:hover{background:#e6eef1}
 @media(max-width:600px){.comic-thumbs{grid-template-columns:repeat(2,minmax(0,1fr))}}
 
-/* Site navigation: grouped Statements menu, collapsible on small screens. */
-.nav-links{display:flex;align-items:center;gap:22px}
-.nav-toggle{display:none}
-.nav-group{position:relative}
-.nav-group summary{list-style:none;cursor:pointer;font-size:.91rem;color:#334155}.nav-group summary::-webkit-details-marker{display:none}
-.nav-group summary::after{content:"▾";font-size:.7rem;margin-left:5px;color:#64748b}
-.nav-group.is-current summary{color:var(--accent);font-weight:700}
-.nav-menu{position:absolute;top:calc(100% + 12px);left:-14px;min-width:220px;display:grid;gap:2px;padding:8px;background:var(--card);border:1px solid var(--line);border-radius:8px;box-shadow:0 14px 34px rgba(33,44,55,.12);z-index:30}
-.nav-menu a{padding:8px 10px;border-radius:5px}.nav-menu a:hover{background:#eef2f3;text-decoration:none}
-@media(max-width:900px){
-  .nav{flex-wrap:wrap;overflow:visible;gap:0;padding:12px 20px}
-  .nav-toggle{display:inline-flex;align-items:center;gap:8px;padding:7px 12px;border:1px solid var(--line);border-radius:999px;background:var(--card);font:700 .85rem var(--sans);color:#334155;cursor:pointer}
-  .nav-toggle-bars,.nav-toggle-bars::before,.nav-toggle-bars::after{display:block;width:14px;height:2px;background:currentColor;border-radius:2px;position:relative}
-  .nav-toggle-bars::before,.nav-toggle-bars::after{content:"";position:absolute;left:0}.nav-toggle-bars::before{top:-4px}.nav-toggle-bars::after{top:4px}
-  .nav-links{display:none;width:100%;flex-direction:column;align-items:stretch;gap:0;padding:10px 0 6px}
-  .nav-links.is-open{display:flex}
-  .nav-links>a,.nav-group summary{display:block;padding:11px 4px;border-top:1px solid var(--line);font-size:1rem}
-  .nav-group[open] summary{border-bottom:0}
-  .nav-menu{position:static;box-shadow:none;border:0;background:transparent;padding:0 0 6px 14px;min-width:0}
-  .nav-menu a{font-size:.95rem}
-}
-
 /* Home: research statement, six linked highlight cards, footer contact. */
 .hero-statement{font:1.1rem/1.7 var(--serif);color:#34434c;max-width:680px;margin:-12px 0 30px;padding-left:16px;border-left:3px solid var(--accent2)}
 .meta p+p{margin-top:12px}
