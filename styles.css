@@ -314,3 +314,13 @@ footer{max-width:1180px;margin:auto;padding:28px;border-top:1px solid var(--line
 @media(max-width:900px){.gf-stops{grid-template-columns:repeat(2,minmax(0,1fr))}.gf-stops .gf-stop--final{grid-column:span 2}}
 @media(max-width:760px){.gf-feature{padding:38px 0 50px}.gf-deck{font-size:1.14rem}.gf-body p{font-size:1.04rem}.gf-split{grid-template-columns:1fr;gap:24px}.gf-route{padding:26px 18px}.gf-pair{flex-direction:column}.gf-pair>.gf-photo{flex:none;width:100%}.gf-pull{margin:34px auto 40px}}
 @media(max-width:480px){.gf-stops{grid-template-columns:1fr}.gf-stops .gf-stop--final{grid-column:auto}}
+
+/* Projects: Cool Summer Night coaching column (builds on the .gf-* feature styles). */
+.csn-facts{display:grid;grid-template-columns:repeat(4,1fr);max-width:900px;margin:6px auto 46px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.csn-facts>div{padding:18px 16px;text-align:center;border-right:1px solid var(--line)}.csn-facts>div:last-child{border-right:0}
+.csn-facts strong{display:block;font:500 2.1rem/1 var(--serif);color:var(--accent);margin-bottom:7px}.csn-facts span{font:.74rem/1.4 var(--sans);letter-spacing:.05em;text-transform:uppercase;color:#687780}
+.csn-insight{max-width:1040px;margin:14px auto 10px;padding:34px 38px;background:#eeeae1;border-top:1px solid #d8d1c5;border-bottom:1px solid #d8d1c5}
+.csn-insight h3{font-size:clamp(1.6rem,2.7vw,2.2rem);margin:8px 0 18px}
+.csn-insight-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(28px,4vw,48px)}.csn-insight-grid p{font:1.06rem/1.78 var(--serif);color:#27333c;margin:0}
+.gf-body .csn-links{font:700 .9rem/1.7 var(--sans);margin-top:22px}
+@media(max-width:760px){.csn-facts{grid-template-columns:repeat(2,1fr)}.csn-facts>div:nth-child(2){border-right:0}.csn-facts>div:nth-child(-n+2){border-bottom:1px solid var(--line)}.csn-insight{padding:26px 20px}.csn-insight-grid{grid-template-columns:1fr;gap:18px}}
